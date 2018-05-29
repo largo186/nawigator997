@@ -97,22 +97,16 @@ client.on("message", (message) => {
     }
 });
 
-client.on("message", (message) => {
-    if (message.content.toLowerCase() === "Rode Garage") {
-      message.channel.send("Czy chodziło Ci o Rode Garage? https://i.imgur.com/TJMGI5V.jpg (Idlewood naprzeciwko The Well Stacked Pizza)");
-    }
-});
+client.on('message', message => {
 
-client.on("message", (message) => {
-    if (message.content.toLowerCase() === "Liberty State Delivery") {
-      message.channel.send("Czy chodziło Ci o Liberty State Delivery? https://images-ext-1.discordapp.net/external/dZSyZkjU8kWiCHnUkmC34vtiggNZZdcvEn2Tea4jL5I/https/i.imgur.com/qGyjeFt.png?width=1052&height=592 (El Corona)");
-    }
-});
-
-client.on("message", (message) => {
-    if (message.content.toLowerCase() === "Quantum") {
-      message.channel.send("Czy chodziło Ci o Quantum? https://images-ext-2.discordapp.net/external/xj8Jm5NPbu9Omos2TuvxzOLb8jV9StjHH7WKr4hXtQs/https/i.imgur.com/kZWKPynr.png?width=960&height=240 (Aleja Gwiazd)");
-    }
+  if(message.content.toLowerCase() === 'Rode Garage')
+      message.channel.send('Czy chodziło Ci o Rode Garage? https://i.imgur.com/TJMGI5V.jpg (Idlewood naprzeciwko The Well Stacked Pizza)');
+  
+  else if(message.content.toLowerCase() === 'Liberty State Delivery')
+      message.channel.send('Czy chodziło Ci o Liberty State Delivery? https://images-ext-1.discordapp.net/external/dZSyZkjU8kWiCHnUkmC34vtiggNZZdcvEn2Tea4jL5I/https/i.imgur.com/qGyjeFt.png?width=1052&height=592 (El Corona)');
+  
+  else if(message.content.toLowerCase() === 'Quantum')
+      message.channel.send('Czy chodziło Ci o Quantum? https://images-ext-2.discordapp.net/external/xj8Jm5NPbu9Omos2TuvxzOLb8jV9StjHH7WKr4hXtQs/https/i.imgur.com/kZWKPynr.png?width=960&height=240 (Aleja Gwiazd)');
 });
 
 client.on("message", (message) => {
