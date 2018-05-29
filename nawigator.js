@@ -81,7 +81,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
     if (message.content.startsWith("TWSP")) {
-      message.channel.send("Czy chodziło Ci o The Well Stacked Pizza? http://download.gtanet.com/gtagarage/files/image_63061.jpg");
+      message.channel.send("Czy chodziło Ci o The Well Stacked Pizza? https://vignette.wikia.nocookie.net/gta/images/0/0b/The_Well_Stacked_Pizza_Co._%28SA_-_Idlewood%29.jpg/revision/latest?cb=20111130180844&path-prefix=pl");
     }
 });
 
